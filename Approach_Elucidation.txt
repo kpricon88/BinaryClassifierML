@@ -1,0 +1,37 @@
+Load and Prepare Data
+*********************
+-Loaded the data from the given file using required python libraries and prepared it further 
+ for use for training and evaluating the model.
+ 
+Dataset Encoding 
+*******************
+-Applied label encoding to the train data set for handling the categorical variables
+
+Feature selection 
+*******************
+-Used feature selection to reduce the number of input variables for model prediction to optimise performance and computational cost
+-Used Chi Square p-value here for the probability of obtaining data association/significance 
+ 
+Model selection 
+*****************
+-Applied XGBoost model here because input variables are numeric and the problem 
+given is a binary classification problem. 
+
+Model tuning 
+*************
+-since model accuracy is high here(91.84), i have not used the tuning(but can use grid search for tuning) 
+
+Model save
+***********
+-save the model for reuse to a file in disk
+
+
+Deserialised the model 
+***********************
+-used pickle to serialise and desrielise here. 
+
+
+NOTE:- Please use below pip commands if any dependencies missed while testing this in workspace
+
+ex:- 
+pip install xgboost 
